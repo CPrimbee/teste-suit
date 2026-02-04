@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
 class Estudante extends Model
 {
@@ -24,4 +25,9 @@ class Estudante extends Model
     protected $dates = [
         'data_nascimento',
     ];
+
+    public function cursos(): HasManyThrough
+    {
+        return $this->hasManyThrough(Curso::class, EstudanteCurso::class, 'estudante_id', 'id', 'id', 'curso_id');
+    }
 }

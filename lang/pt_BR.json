@@ -49,5 +49,8 @@
     "Create Student": "Criar Aluno",
     "Student": "Aluno",
     "The document already exists.": "O documento já existe.",
-    "The name must be less than or equal to 3 characters.": "O nome deve ter no mínimo 3 caracteres."
+    "The name must be less than or equal to 3 characters.": "O nome deve ter no mínimo 3 caracteres.",
+    "Course added successfully!": "Curso adicionado com sucesso!",
+    "Add Courses Student: #:id": "Adicionar Cursos do Estudante: #:id",
+    "Course": "Curso"
 }

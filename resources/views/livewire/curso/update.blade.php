@@ -36,10 +36,9 @@
                     wire:model.onchange.debounce="form.data_fim" />
             </div>
 
-            <div class="col-span-1 sm:col-span-1 space-y-4">
+            <div class="col-span-1 sm:col-span-1">
                 <x-date label="{{__('Max Enrollment')}}" format="DD/MM/YYYY"
                     wire:model.onchange.debounce="form.data_max_matricula" :min-date="now()->addWeeks(2)" />
-                <x-number label="{{__(key: 'Max Students')}}" min="5" wire:model="form.max_alunos" />
             </div>
 
             <div class="col-span-1 sm:col-span-3">

@@ -38,6 +38,7 @@ class Index extends Component
     public function rows(): LengthAwarePaginator
     {
         return Estudante::query()
+            ->with('cursos')
             ->when($this->search !== null, fn (Builder $query) => $query->whereAny(['nome', 'documento'], 'like', '%' . trim($this->search) . '%'))
             ->orderBy(...array_values($this->sort))
             ->paginate($this->quantity)

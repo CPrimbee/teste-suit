@@ -10,7 +10,6 @@ class CreateForm extends Form
     public $descricao = '';
     public $vagas = 5;
     public $preco = 100;
-    public $max_alunos = 5;
     public $data_inicio = '';
     public $data_fim = '';
     public $data_max_matricula = '';
@@ -25,7 +24,6 @@ class CreateForm extends Form
             'data_inicio' => 'required|date',
             'data_fim' => 'required|date|after:data_inicio',
             'data_max_matricula' => 'required|date',
-            'max_alunos' => 'required|numeric|min:1',
             'vagas' => 'required|numeric|min:1',
         ];
     }
@@ -38,7 +36,6 @@ class CreateForm extends Form
             'data_inicio.required' => __('The start date is required.'),
             'data_fim.required' => __('The end date is required.'),
             'data_max_matricula.required' => __('The max enrollment date is required.'),
-            'max_alunos.required' => __('The max students is required.'),
             'vagas.required' => __('The vacancies is required.'),
             'data_fim.after' => __('The end date must be after the start date.'),
         ];
