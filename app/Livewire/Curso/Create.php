@@ -38,27 +38,20 @@ class Create extends Component
         $this->modal = false;
 
         try {
-            // $preco = str_replace(['.', ','], ['', '.'], $this->form->preco);
-            // $preco = (int) round($preco * 100);
-            // dd($preco, $this->form->preco);
-            // $this->form->fill([
-            //     'preco' => $preco,
-            // ]);
-
             Curso::create($this->form->all());
 
             $this->form->reset();
             $this->form->resetValidation();
 
             $this->dispatch('created');
-            $this->success(__('Course created successfully!'));
+            $this->toast()->success(__('Course created successfully!'))->send();
 
             return;
         } catch (Exception $e) {
             report($e);
         }
 
-        $this->error(__('Error creating course!'));
+        $this->toast()->error(__('Error creating course!'))->send();
     }
 
     public function close(): void

@@ -24,10 +24,13 @@
 
             @interact('column_action', $row)
             <div class="flex gap-1">
-                <x-button.circle icon="pencil" wire:click="confirm" />
+                <x-button.circle icon="pencil" color="teal"
+                    wire:click="$dispatch('course::update::load', { 'curso' : '{{ $row->id }}'})" />
                 <x-button.circle icon="trash" color="red" wire:click="confirm" />
             </div>
             @endinteract
         </x-table>
     </x-card>
+
+    <livewire:curso.update @updated="$refresh" />
 </div>
