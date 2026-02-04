@@ -24,12 +24,6 @@
             @interact('column_data_fim', $row)
             {{ $row->data_fim->format('d/m/Y') }}
             @endinteract
-
-            @interact('column_action', $row)
-            <div class="flex gap-1">
-                <x-button.circle icon="trash" color="red" />
-            </div>
-            @endinteract
         </x-table>
         <x-slot:footer>
             <x-button text="{{__('Cancel')}}" color="secondary" light wire:click="close" loading="add" />

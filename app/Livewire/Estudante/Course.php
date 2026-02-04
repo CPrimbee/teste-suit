@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Livewire\Attributes\Computed;
 use Livewire\Attributes\On;
+use Livewire\Attributes\Renderless;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -35,7 +36,6 @@ class Course extends Component
         ['index' => 'preco', 'label' => 'Preço'],
         ['index' => 'data_inicio', 'label' => 'Data Início'],
         ['index' => 'data_fim', 'label' => 'Data Fim'],
-        ['index' => 'action', 'sortable' => false],
     ];
 
     #[Computed()]
