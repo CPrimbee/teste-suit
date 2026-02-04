@@ -3,7 +3,6 @@
 namespace App\Livewire\Forms\Estudante;
 
 use App\Models\Estudante;
-use Livewire\Attributes\Validate;
 use Livewire\Form;
 
 class UpdateForm extends Form

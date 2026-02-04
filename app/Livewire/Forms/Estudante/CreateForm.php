@@ -2,7 +2,6 @@
 
 namespace App\Livewire\Forms\Estudante;
 
-use Livewire\Attributes\Validate;
 use Livewire\Form;
 
 class CreateForm extends Form
