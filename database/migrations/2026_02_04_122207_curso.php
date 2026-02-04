@@ -17,7 +17,6 @@ return new class () extends Migration {
             $table->text('descricao')->nullable();
             $table->integer('vagas');
             $table->integer('preco')->default(0);
-            $table->string('max_alunos');
             $table->string('data_inicio');
             $table->string('data_fim');
             $table->string('data_max_matricula');

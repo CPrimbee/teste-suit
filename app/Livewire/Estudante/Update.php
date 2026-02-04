@@ -49,14 +49,14 @@ class Update extends Component
             $this->form->resetValidation();
 
             $this->dispatch('updated');
-            $this->toast()->success(__('Course updated successfully!'))->send();
+            $this->toast()->success(__('Student updated successfully!'))->send();
 
             return;
         } catch (Exception $e) {
             report($e);
         }
 
-        $this->toast()->error(__('Error updating course!'))->send();
+        $this->toast()->error(__('Error updating student!'))->send();
     }
 
     public function close(): void
@@ -66,7 +66,7 @@ class Update extends Component
         $this->form->reset();
         $this->form->resetValidation();
 
-        $this->dispatch('curso::index::refresh');
+        $this->dispatch('student::index::refresh');
         $this->toast()->info(__('Operation cancelled!'))->send();
     }
 }

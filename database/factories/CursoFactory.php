@@ -19,7 +19,6 @@ class CursoFactory extends Factory
             'descricao' => fake()->text(),
             'vagas' => fake()->numberBetween(1, 100),
             'preco' => fake()->numberBetween(1, 1000),
-            'max_alunos' => fake()->numberBetween(1, 100),
             'data_inicio' => fake()->date(),
             'data_fim' => fake()->date(),
             'data_max_matricula' => fake()->date(),

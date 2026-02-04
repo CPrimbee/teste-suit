@@ -19,7 +19,7 @@ class Create extends Component
     public function mount(): void
     {
         $this->form->fill([
-            'preco' => $this->form->preco / 100,
+            'preco' => $this->form->preco,
             'data_inicio' => now()->addMonth(),
             'data_fim' => now()->addMonths(2),
             'data_max_matricula' => now()->addWeeks(2),
