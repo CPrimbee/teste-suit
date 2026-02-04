@@ -26,7 +26,7 @@
             <div class="flex gap-1">
                 <x-button.circle icon="pencil" color="teal"
                     wire:click="$dispatch('course::update::load', { 'curso' : '{{ $row->id }}'})" />
-                <x-button.circle icon="trash" color="red" wire:click="confirm" />
+                <livewire:curso.delete :curso="$row" :key="uniqid('', true)" @deleted="$refresh" />
             </div>
             @endinteract
         </x-table>
