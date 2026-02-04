@@ -27,6 +27,9 @@ class Curso extends Model
         'preco' => 'integer',
         'max_alunos' => 'integer',
         'ativo' => 'boolean',
+        'data_inicio' => 'date:Y-m-d',
+        'data_fim' => 'date:Y-m-d',
+        'data_max_matricula' => 'date:Y-m-d',
     ];
 
     protected $dates = [

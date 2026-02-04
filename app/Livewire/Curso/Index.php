@@ -26,6 +26,7 @@ class Index extends Component
         ['index' => 'preco', 'label' => 'Preço'],
         ['index' => 'data_inicio', 'label' => 'Data Início'],
         ['index' => 'data_fim', 'label' => 'Data Fim'],
+        ['index' => 'data_max_matricula', 'label' => 'Matrícula Até'],
         ['index' => 'ativo', 'label' => 'Ativo'],
         ['index' => 'action', 'sortable' => false],
     ];
