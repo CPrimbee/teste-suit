@@ -57,6 +57,7 @@
                 </x-slot:brand>
                 <x-side-bar.item text="Dashboard" icon="home" :route="route('dashboard')" />
                 <x-side-bar.item text="{{__('Courses')}}" icon="book-open" :route="route('curso.index')" />
+                <x-side-bar.item text="{{__('Students')}}" icon="academic-cap" :route="route('estudante.index')" />
                 <x-side-bar.item text="{{__('Welcome Page')}}" icon="arrow-uturn-left" :route="route('welcome')" />
             </x-side-bar>
         </x-slot:menu>

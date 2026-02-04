@@ -34,5 +34,20 @@
     "The name must be less than or equal to 20 characters.": "O nome deve ter no máximo 20 caracteres.",
     "Update Course: #:id": "Atualizar Curso: #:id",
     "Warning!": "Atenção!",
-    "Are you sure?": "Tem certeza?"
+    "Are you sure?": "Tem certeza?",
+    "Students": "Alunos",
+    "Document": "Documento",
+    "Birthdate": "Data de Nascimento",
+    "Student created successfully!": "Aluno criado com sucesso!",
+    "Student updated successfully!": "Aluno atualizado com sucesso!",
+    "Student deleted successfully!": "Aluno deletado com sucesso!",
+    "The document is required.": "O documento é obrigatório.",
+    "The birthdate is required.": "A data de nascimento é obrigatória.",
+    "The document must be less than or equal to 14 characters.": "O documento deve ter no máximo 14 caracteres.",
+    "The birthdate must be less than or equal to 10 characters.": "A data de nascimento deve ter no máximo 10 caracteres.",
+    "Update Student: #:id": "Atualizar Aluno: #:id",
+    "Create Student": "Criar Aluno",
+    "Student": "Aluno",
+    "The document already exists.": "O documento já existe.",
+    "The name must be less than or equal to 3 characters.": "O nome deve ter no mínimo 3 caracteres."
 }
